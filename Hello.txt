@@ -1,1 +1,242 @@
-Hello World feature/SR-001
+Microsoft Windows [Version 10.0.22621.3527]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\shaik\Music\Git practice>git clone https://github.com/yahiyashaikh/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\shaik\Music\Git practice>cd test
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\shaik\Music\Git practice\test>git add .
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.txt
+
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "a new file created"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shaik@LAPTOP-TQAA95QH.(none)')
+
+C:\Users\shaik\Music\Git practice\test>git config --global user.email "yahiyask121@gmail.com"
+
+C:\Users\shaik\Music\Git practice\test>git config --global user.name "yahiya"
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "a new file created"
+[main (root-commit) 4be49c4] a new file created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+
+C:\Users\shaik\Music\Git practice\test>git push
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/yahiyashaikh/test.git
+ * [new branch]      main -> main
+
+C:\Users\shaik\Music\Git practice\test>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\shaik\Music\Git practice\test>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is 32EF-66A4
+
+ Directory of C:\Users\shaik\Music\Git practice\test
+
+04-05-2024  10:36    <DIR>          .
+04-05-2024  10:34    <DIR>          ..
+04-05-2024  10:36                 5 Hello.txt
+               1 File(s)              5 bytes
+               2 Dir(s)  13,580,406,784 bytes free
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\shaik\Music\Git practice\test>git add Hello.txt
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "Changes hello.txt"
+[main cf3e135] Changes hello.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\shaik\Music\Git practice\test>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 254 bytes | 254.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/yahiyashaikh/test.git
+   4be49c4..cf3e135  main -> main
+
+C:\Users\shaik\Music\Git practice\test>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is 32EF-66A4
+
+ Directory of C:\Users\shaik\Music\Git practice\test
+
+04-05-2024  10:36    <DIR>          .
+04-05-2024  10:34    <DIR>          ..
+04-05-2024  10:39                11 Hello.txt
+               1 File(s)             11 bytes
+               2 Dir(s)  13,577,228,288 bytes free
+
+C:\Users\shaik\Music\Git practice\test>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 35.35 KiB | 3.93 MiB/s, done.
+From https://github.com/yahiyashaikh/test
+   cf3e135..4f91e13  main       -> origin/main
+Updating cf3e135..4f91e13
+Fast-forward
+ burroughs-mechanical-calculator.jpg | Bin 0 -> 35605 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 burroughs-mechanical-calculator.jpg
+
+C:\Users\shaik\Music\Git practice\test>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is 32EF-66A4
+
+ Directory of C:\Users\shaik\Music\Git practice\test
+
+04-05-2024  10:42    <DIR>          .
+04-05-2024  10:34    <DIR>          ..
+04-05-2024  10:42            35,605 burroughs-mechanical-calculator.jpg
+04-05-2024  10:39                11 Hello.txt
+               2 File(s)         35,616 bytes
+               2 Dir(s)  13,577,113,600 bytes free
+
+C:\Users\shaik\Music\Git practice\test>git branch
+* main
+
+C:\Users\shaik\Music\Git practice\test>git checkout -b feater/SR-001 main
+Switched to a new branch 'feater/SR-001'
+
+C:\Users\shaik\Music\Git practice\test>git branch
+* feater/SR-001
+  main
+
+C:\Users\shaik\Music\Git practice\test>vi Hello.txt
+'vi' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\shaik\Music\Git practice\test>note Hello.txt
+'note' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\shaik\Music\Git practice\test>git branch
+* feater/SR-001
+  main
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch feater/SR-001
+nothing to commit, working tree clean
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch feater/SR-001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\shaik\Music\Git practice\test>git add .
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "message"
+[feater/SR-001 82c57ab] message
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\shaik\Music\Git practice\test>git push origin feater/SR-001
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feater/SR-001' on GitHub by visiting:
+remote:      https://github.com/yahiyashaikh/test/pull/new/feater/SR-001
+remote:
+To https://github.com/yahiyashaikh/test.git
+ * [new branch]      feater/SR-001 -> feater/SR-001
+
+C:\Users\shaik\Music\Git practice\test>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\shaik\Music\Git practice\test>git merge feater/SR-001
+Updating 4f91e13..82c57ab
+Fast-forward
+ Hello.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\shaik\Music\Git practice\test>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "merge"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\shaik\Music\Git practice\test>git pull origin main
+From https://github.com/yahiyashaikh/test
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\shaik\Music\Git practice\test>git commit -m "merge"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\shaik\Music\Git practice\test>git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/yahiyashaikh/test.git
+   4f91e13..82c57ab  main -> main
+
+C:\Users\shaik\Music\Git practice\test>
